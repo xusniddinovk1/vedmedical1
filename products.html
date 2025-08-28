@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahsulotlar - VedMedical</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-flask"></i>
+                    <span>VedMedical</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Biz haqimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link active">Mahsulotlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="manufacturing.html" class="nav-link">Ishlab chiqarish</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partners.html" class="nav-link">Hamkorlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">Yangiliklar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Galereya</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Mahsulotlarimiz</h1>
+            <p>Yuqori sifatli vaksinalar va tibbiy preparatlar</p>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">Barchasi</button>
+                <button class="filter-btn" data-filter="vaccines">Vaksinalar</button>
+                <button class="filter-btn" data-filter="antibiotics">Antibiotiklar</button>
+                <button class="filter-btn" data-filter="vitamins">Vitaminlar</button>
+                <button class="filter-btn" data-filter="analgesics">Og'riq qoldiruvchilar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Vaccines -->
+                <div class="product-card" data-category="vaccines">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="COVID-19 vaksina">
+                        <div class="product-badge">Yangi</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>PharmaCorp COVID-19</h3>
+                        <p class="product-category">Vaksinalar</p>
+                        <p class="product-description">COVID-19 ga qarshi yuqori samarali vaksina. Klinik sinovlardan muvaffaqiyatli o'tgan.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-vial"></i> 0.5ml</span>
+                            <span><i class="fas fa-thermometer-three-quarters"></i> 2-8°C</span>
+                            <span><i class="fas fa-calendar"></i> 24 oy</span>
+                        </div>
+                        <button class="btn btn-primary">Batafsil ma'lumot</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vaccines">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="Gripp vaksina">
+                    </div>
+                    <div class="product-info">
+                        <h3>PharmaCorp Flu Shield</h3>
+                        <p class="product-category">Vaksinalar</p>
+                        <p class="product-description">Mavsumiy gripp kasalligiga qarshi kompleks vaksina. WHO tavsiyalariga muvofiq.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-vial"></i> 0.5ml</span>
+                            <span><i class="fas fa-thermometer-three-quarters"></i> 2-8°C</span>
+                            <span><i class="fas fa-calendar"></i> 18 oy</span>
+                        </div>
+                        <button class="btn btn-primary">Batafsil ma'lumot</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vaccines">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="Gepatit vaksina">
+                    </div>
+                    <div class="product-info">
+                        <h3>VedMedical Hepatit B</h3>
+                        <p class="product-category">Vaksinalar</p>
+                        <p class="product-description">Gepatit B kasalligiga qarshi samarali vaksina. Chaqaloqlar va kattalar uchun.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-vial"></i> 1.0ml</span>
+                            <span><i class="fas fa-thermometer-three-quarters"></i> 2-8°C</span>
+                            <span><i class="fas fa-calendar"></i> 36 oy</span>
+                        </div>
+                        <button class="btn btn-primary">Batafsil ma'lumot</button>
+                    </div>
+                </div>
+
+                <!-- Antibiotics -->
+                <div class="product-card" data-category="antibiotics">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="Amoksitsillin">
+                    </div>
+                    <div class="product-info">
+                        <h3>VedMedical Amoxicillin</h3>
+                        <p class="product-category">Antibiotiklar</p>
+                        <p class="product-description">Keng spektrli antibiotik. Respirator va urogenital infeksiyalar uchun.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-pills"></i> 500mg</span>
+                            <span><i class="fas fa-box"></i> 20 kapsul</span>
+                            <span><i class="fas fa-calendar"></i> 24 oy</span>
+                        </div>
+                        <button class="btn btn-primary">Batafsil ma'lumot</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="antibiotics">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="Azitromitsin">
+                    </div>
+                    <div class="product-info">
+                        <h3>VedMedical Azithromycin</h3>
+                        <p class="product-category">Antibiotiklar</p>
+                        <p class="product-description">Makrolid antibiotik. Yuqori nafas yo'llari infeksiyalari uchun samarali.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-pills"></i> 250mg</span>
+                            <span><i class="fas fa-box"></i> 6 tablet</span>
+                            <span><i class="fas fa-calendar"></i> 36 oy</span>
+                        </div>
+                        <button class="btn btn-primary">Batafsil ma'lumot</button>
+                    </div>
+                </div>
+
+                <!-- Vitamins -->
+                <div class="product-card" data-category="vitamins">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="Vitamin C">
+                        <div class="product-badge">Mashhur</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>VedMedical Vitamin C</h3>
+                        <p class="product-category">Vitaminlar</p>
+                        <p class="product-description">Yuqori dozali C vitamini. Immunitetni mustahkamlash uchun.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-pills"></i> 1000mg</span>
+                            <span><i class="fas fa-box"></i> 30 tablet</span>
+                            <span><i class="fas fa-calendar"></i> 24 oy</span>
+                        </div>
+                        <button class="btn btn-primary">Batafsil ma'lumot</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vitamins">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="Vitamin D">
+                    </div>
+                    <div class="product-info">
+                        <h3>VedMedical Vitamin D3</h3>
+                        <p class="product-category">Vitaminlar</p>
+                        <p class="product-description">Tabiiy D3 vitamini. Suyak va mushaklar salomatligi uchun.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-pills"></i> 4000 IU</span>
+                            <span><i class="fas fa-box"></i> 60 kapsul</span>
+                            <span><i class="fas fa-calendar"></i> 36 oy</span>
+                        </div>
+                        <button class="btn btn-primary">Batafsil ma'lumot</button>
+                    </div>
+                </div>
+
+                <!-- Analgesics -->
+                <div class="product-card" data-category="analgesics">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="Paratsetamol">
+                    </div>
+                    <div class="product-info">
+                        <h3>VedMedical Paracetamol</h3>
+                        <p class="product-category">Og'riq qoldiruvchilar</p>
+                        <p class="product-description">Og'riq va isitma qoldiruvchi dori. Xavfsiz va samarali.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-pills"></i> 500mg</span>
+                            <span><i class="fas fa-box"></i> 20 tablet</span>
+                            <span><i class="fas fa-calendar"></i> 24 oy</span>
+                        </div>
+                        <button class="btn btn-primary">Batafsil ma'lumot</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="analgesics">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="Ibuprofen">
+                    </div>
+                    <div class="product-info">
+                        <h3>VedMedical Ibuprofen</h3>
+                        <p class="product-category">Og'riq qoldiruvchilar</p>
+                        <p class="product-description">Yallig'lanishga qarshi va og'riq qoldiruvchi dori.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-pills"></i> 400mg</span>
+                            <span><i class="fas fa-box"></i> 24 tablet</span>
+                            <span><i class="fas fa-calendar"></i> 36 oy</span>
+                        </div>
+                        <button class="btn btn-primary">Batafsil ma'lumot</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section class="product-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mahsulotlarimizning afzalliklari</h2>
+                <p>Nima uchun PharmaCorp mahsulotlarini tanlash kerak</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Sertifikatlangan</h3>
+                    <p>Barcha mahsulotlar WHO, FDA va O'zbekiston Sog'liqni saqlash vazirligi tomonidan sertifikatlangan.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Ilmiy asoslangan</h3>
+                    <p>Har bir preparat keng qamrovli klinik sinovlardan o'tgan va samaradorligi isbotlangan.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>GMP standartlari</h3>
+                    <p>Ishlab chiqarish jarayoni xalqaro GMP (Good Manufacturing Practice) standartlariga javob beradi.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Tez yetkazib berish</h3>
+                    <p>Mahsulotlar butun mamlakat bo'ylab tez va xavfsiz yetkazib beriladi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-flask"></i>
+                        <span>VedMedical</span>
+                    </div>
+                    <p>Sog'liqni saqlash sohasida yuqori sifatli vaksinalar va preparatlar ishlab chiqaruvchi kompaniya.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Tezkor havolalar</h3>
+                    <ul>
+                        <li><a href="about.html">Biz haqimizda</a></li>
+                        <li><a href="products.html">Mahsulotlar</a></li>
+                        <li><a href="news.html">Yangiliklar</a></li>
+                        <li><a href="gallery.html">Galereya</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Mahsulotlar</h3>
+                    <ul>
+                        <li><a href="#">Vaksinalar</a></li>
+                        <li><a href="#">Preparatlar</a></li>
+                        <li><a href="#">Antibiotiklar</a></li>
+                        <li><a href="#">Vitaminlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Aloqa</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Toshkent, Chilonzor tumani</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+998 90 123 45 67</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@pharmacorp.uz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VedMedical. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

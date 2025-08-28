@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galereya - VedMedical</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-flask"></i>
+                    <span>VedMedical</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Biz haqimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Mahsulotlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="manufacturing.html" class="nav-link">Ishlab chiqarish</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partners.html" class="nav-link">Hamkorlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">Yangiliklar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link active">Galereya</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Galereya</h1>
+            <p>Kompaniya faoliyati va ishlab chiqarish jarayonlari</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="gallery-filter-btn active" data-filter="all">Barchasi</button>
+                <button class="gallery-filter-btn" data-filter="facility">Binolar</button>
+                <button class="gallery-filter-btn" data-filter="production">Ishlab chiqarish</button>
+                <button class="gallery-filter-btn" data-filter="products">Mahsulotlar</button>
+                <button class="gallery-filter-btn" data-filter="team">Jamoa</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="facility">
+                    <img src="logo.jpg" alt="Kompaniya binosi">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Asosiy bino</h3>
+                            <p>PharmaCorp kompaniyasining bosh ofisilari</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="production">
+                    <img src="logo.jpg" alt="Ishlab chiqarish liniyasi">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Ishlab chiqarish liniyasi</h3>
+                            <p>Zamonaviy avtomatlashtirilgan liniya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facility">
+                    <img src="logo.jpg" alt="Laboratoriya">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Tadqiqot laboratoriyasi</h3>
+                            <p>Ilmiy tadqiqot va ishlanmalar markazi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="products">
+                    <img src="logo.jpg" alt="Mahsulotlar">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Tayyor mahsulotlar</h3>
+                            <p>Sifatli vaksinalar va preparatlar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="production">
+                    <img src="logo.jpg" alt="Sifat nazorati">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Sifat nazorati</h3>
+                            <p>Har bir mahsulotning sifat tekshiruvi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="team">
+                    <img src="logo.jpg" alt="Xodimlar">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Professional jamoa</h3>
+                            <p>Malakali xodimlar va olimlar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facility">
+                    <img src="logo.jpg" alt="Ombor">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Zamonaviy ombor</h3>
+                            <p>Mahsulotlarni saqlash kompleksi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="production">
+                    <img src="logo.jpg" alt="Qadoqlash">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Qadoqlash bo'limi</h3>
+                            <p>Avtomatik qadoqlash tizimlari</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="products">
+                    <img src="logo.jpg" alt="Vaksinalar">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Vaksin koleksiyasi</h3>
+                            <p>Turli kasalliklar uchun vaksinalar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-flask"></i>
+                        <span>VedMedical</span>
+                    </div>
+                    <p>Sog'liqni saqlash sohasida yuqori sifatli vaksinalar va preparatlar ishlab chiqaruvchi kompaniya.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Aloqa</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+998 90 123 45 67</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@pharmacorp.uz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VedMedical. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
