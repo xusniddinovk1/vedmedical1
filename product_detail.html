@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahsulot tafsilotlari - VetMed</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-paw"></i>
+                    <span>VetMed</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Biz haqimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link active">Mahsulotlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="manufacturing.html" class="nav-link">Ishlab chiqarish</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partners.html" class="nav-link">Hamkorlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">Yangiliklar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Galereya</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Bosh sahifa</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="products.html">Mahsulotlar</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>VetMed Canine Combo</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-content">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="VetMed Canine Combo vaksina" id="mainProductImage">
+                        <div class="product-badge">Yangi</div>
+                        <div class="image-zoom">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Vaksina 1" class="thumbnail active" onclick="changeImage(this)">
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Vaksina 2" class="thumbnail" onclick="changeImage(this)">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Qadoqlash" class="thumbnail" onclick="changeImage(this)">
+                        <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Etiketka" class="thumbnail" onclick="changeImage(this)">
+                    </div>
+                    <div class="product-gallery-info">
+                        <p><i class="fas fa-images"></i> 4 ta rasm mavjud</p>
+                        <p><i class="fas fa-expand"></i> Kattalashtirish uchun bosing</p>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-category">
+                        <i class="fas fa-syringe"></i>
+                        <span>Vaksinalar</span>
+                    </div>
+                    
+                    <h1 class="product-title">VetMed Canine Combo</h1>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">(4.9/5 - 127 ta baholash)</span>
+                    </div>
+
+                    <div class="product-country">
+                        <i class="fas fa-globe"></i>
+                        <span><strong>Ishlab chiqaruvchi davlat:</strong> O'zbekiston</span>
+                    </div>
+
+                    <div class="product-short-desc">
+                        <p>Itlar uchun kompleks vaksina (Parvovirus, Distemper, Hepatit, Parainfluenza va Adenovirus 2 ga qarshi). Kuchli immunitet hosil qiladi va 12 oy davomida himoya ta'minlaydi.</p>
+                    </div>
+
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-vial"></i>
+                            <div>
+                                <span class="spec-label">Hajm:</span>
+                                <span class="spec-value">1ml</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-thermometer-three-quarters"></i>
+                            <div>
+                                <span class="spec-label">Saqlash:</span>
+                                <span class="spec-value">2-8°C</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <span class="spec-label">Muddat:</span>
+                                <span class="spec-value">36 oy</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <span class="spec-label">Sertifikat:</span>
+                                <span class="spec-value">FVE, USDA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-info-badges">
+                        <div class="info-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Veterinar sertifikat</span>
+                        </div>
+                        <div class="info-badge">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Professional yetkazib berish</span>
+                        </div>
+                        <div class="info-badge">
+                            <i class="fas fa-medal"></i>
+                            <span>Premium sifat</span>
+                        </div>
+                        <div class="info-badge">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>24/7 maslahat</span>
+                        </div>
+                    </div>
+
+                    <div class="product-pricing">
+                        <div class="price-section">
+                            <div class="current-price">$45.99</div>
+                            <div class="original-price">$52.99</div>
+                            <div class="discount-badge">15% chegirma</div>
+                        </div>
+                        <div class="availability">
+                            <div class="stock-status available">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Omborda mavjud</span>
+                            </div>
+                            <div class="delivery-info">
+                                <i class="fas fa-truck"></i>
+                                <span>2-3 kun ichida yetkazib berish</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <label>Miqdor:</label>
+                            <div class="quantity-controls">
+                                <button type="button" class="qty-btn" onclick="changeQuantity(-1)">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button type="button" class="qty-btn" onclick="changeQuantity(1)">+</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-large">
+                            <i class="fas fa-shopping-cart"></i>
+                            Buyurtma berish
+                        </button>
+                        <button class="btn btn-outline btn-large">
+                            <i class="fas fa-heart"></i>
+                            Sevimlilar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Details Tabs -->
+            <div class="product-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="openTab(event, 'description')">Ta'rif</button>
+                    <button class="tab-btn" onclick="openTab(event, 'usage')">Qo'llash yo'riqnomasi</button>
+                    <button class="tab-btn" onclick="openTab(event, 'composition')">Tarkib</button>
+                    <button class="tab-btn" onclick="openTab(event, 'reviews')">Sharhlar</button>
+                </div>
+
+                <div class="tab-content">
+                    <!-- Description Tab -->
+                    <div id="description" class="tab-panel active">
+                        <h3>Mahsulot haqida batafsil ma'lumot</h3>
+                        <p>VetMed Canine Combo vaksina itlar uchun eng keng tarqalgan 5 ta virusli kasallikka qarshi himoya ta'minlaydi. Vaksina 8 haftalik yoshdan boshlab qo'llanilishi mumkin.</p>
+                        
+                        <h4>Asosiy xususiyatlari:</h4>
+                        <ul>
+                            <li>5 ta virusga qarshi kompleks himoya</li>
+                            <li>12 oy davomida kuchli immunitet</li>
+                            <li>8 haftalik yoshdan qo'llash mumkin</li>
+                            <li>Minimal nojo'ya ta'sirlar</li>
+                            <li>Veterinar standartlarga javob beradi</li>
+                        </ul>
+
+                        <h4>Qanday kasalliklarga qarshi himoya qiladi:</h4>
+                        <ul>
+                            <li><strong>Parvovirus:</strong> O'lim xavfi yuqori bo'lgan ich-qorin kasalligi</li>
+                            <li><strong>Distemper:</strong> Asab tizimi va nafas olish yo'llarini zarar etkazuvchi virus</li>
+                            <li><strong>Hepatit:</strong> Jigar va boshqa organlarni zarar etkazuvchi virus</li>
+                            <li><strong>Parainfluenza:</strong> Nafas olish yo'llari kasalligi</li>
+                            <li><strong>Adenovirus 2:</strong> Kuchaytirilgan nafas olish yo'llari himoyasi</li>
+                        </ul>
+
+                        <h4>Kontraindikatsiyalar:</h4>
+                        <ul>
+                            <li>8 haftalikdan kichik kuchukchalar</li>
+                            <li>Kasallik davridagi itlar</li>
+                            <li>Immunitet tanqisligi bo'lgan itlar</li>
+                            <li>Homilador itlar (veterinar maslahatisiz)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Usage Instructions Tab -->
+                    <div id="usage" class="tab-panel">
+                        <h3>Qo'llash yo'riqnomasi</h3>
+                        
+                        <div class="usage-section">
+                            <h4><i class="fas fa-syringe"></i> Yuborish usuli</h4>
+                            <p>Vaksina faqat teri ostiga (subkutan) yuboriladi. Yelka yoki orqa oyoq omoplatkasi orasiga yuborish tavsiya etiladi.</p>
+                        </div>
+
+                        <div class="usage-section">
+                            <h4><i class="fas fa-calculator"></i> Dozalash</h4>
+                            <ul>
+                                <li><strong>Birlamchi immunizatsiya:</strong> 2-3 doza, 3-4 hafta oraliq bilan</li>
+                                <li><strong>Har bir doza:</strong> 1 ml</li>
+                                <li><strong>Kuchaytiruv doza:</strong> Yiliga 1 marta</li>
+                                <li><strong>Boshlang'ich yosh:</strong> 8 haftalikdan</li>
+                            </ul>
+                        </div>
+
+                        <div class="usage-section">
+                            <h4><i class="fas fa-clock"></i> Qo'llash tartibi</h4>
+                            <ol>
+                                <li>Vaksina xona haroratiga keltiriladi (15-30 daqiqa)</li>
+                                <li>Flakonni sekin chayqatib aralashtiring</li>
+                                <li>Inyeksiya joyini antiseptik bilan tozalang</li>
+                                <li>1 ml vaksina teri ostiga yuboriladi</li>
+                                <li>Itni 15-30 daqiqa kuzatib turing</li>
+                            </ol>
+                        </div>
+
+                        <div class="usage-section">
+                            <h4><i class="fas fa-exclamation-triangle"></i> Ehtiyot choralari</h4>
+                            <ul>
+                                <li>Vaksina yuborishdan oldin itning sog'lig'ini tekshiring</li>
+                                <li>Allergik reaktsiya uchun dori-darmonlar tayyor bo'lishi kerak</li>
+                                <li>Flakonni ishlatishdan oldin tekshiring</li>
+                                <li>Bir martalik siringe ishlatilishi shart</li>
+                                <li>Homilador va emizuvchi itlarga ehtiyotkorlik bilan</li>
+                            </ul>
+                        </div>
+
+                        <div class="usage-section">
+                            <h4><i class="fas fa-snowflake"></i> Saqlash shartlari</h4>
+                            <ul>
+                                <li>Harorat: 2-8°C (muzlatmay)</li>
+                                <li>Yorug'likdan himoyalang</li>
+                                <li>Ochilgandan keyin 6 soat ichida ishlatilishi kerak</li>
+                                <li>Muzlatish mumkin emas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Composition Tab -->
+                    <div id="composition" class="tab-panel">
+                        <h3>Tarkib va formulation</h3>
+                        
+                        <div class="composition-table">
+                            <h4>Faol modda (1 ml dozada):</h4>
+                            <table>
+                                <tr>
+                                    <td>Canine Parvovirus (susaytirilgan)</td>
+                                    <td>10³ TCID₅₀</td>
+                                </tr>
+                                <tr>
+                                    <td>Canine Distemper Virus (susaytirilgan)</td>
+                                    <td>10³ TCID₅₀</td>
+                                </tr>
+                                <tr>
+                                    <td>Canine Adenovirus Type 1</td>
+                                    <td>10³ TCID₅₀</td>
+                                </tr>
+                                <tr>
+                                    <td>Canine Parainfluenza Virus</td>
+                                    <td>10³ TCID₅₀</td>
+                                </tr>
+                                <tr>
+                                    <td>Canine Adenovirus Type 2</td>
+                                    <td>10³ TCID₅₀</td>
+                                </tr>
+                            </table>
+
+                            <h4>Yordamchi moddalar:</h4>
+                            <table>
+                                <tr>
+                                    <td>Aluminiy fosfat</td>
+                                    <td>Adjuvant</td>
+                                </tr>
+                                <tr>
+                                    <td>Thiomersal</td>
+                                    <td>Konservant</td>
+                                </tr>
+                                <tr>
+                                    <td>Natriy xlorid</td>
+                                    <td>Izotoniya uchun</td>
+                                </tr>
+                                <tr>
+                                    <td>Fosfat buffer</td>
+                                    <td>pH stabilizatori</td>
+                                </tr>
+                                <tr>
+                                    <td>Suv (inyeksiya uchun)</td>
+                                    <td>Erituvchi</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="molecular-info">
+                            <h4>Veterinar ma'lumotlar:</h4>
+                            <ul>
+                                <li><strong>Vaksina turi:</strong> O'li va susaytirilgan tirik viruslar</li>
+                                <li><strong>Nishon hayvonlar:</strong> Itlar (8 haftalikdan)</li>
+                                <li><strong>Immunitet davomiyligi:</strong> 12 oy</li>
+                                <li><strong>pH:</strong> 7.0 - 7.4</li>
+                                <li><strong>Osmolallik:</strong> 290-310 mOsm/kg</li>
+                                <li><strong>Saqlash muddati:</strong> 36 oy</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Reviews Tab -->
+                    <div id="reviews" class="tab-panel">
+                        <h3>Foydalanuvchi sharhlari</h3>
+                        
+                        <div class="reviews-summary">
+                            <div class="overall-rating">
+                                <div class="rating-score">4.9</div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-count">127 ta baholash asosida</div>
+                            </div>
+                            
+                            <div class="rating-breakdown">
+                                <div class="rating-bar">
+                                    <span>5 ⭐</span>
+                                    <div class="bar"><div class="fill" style="width: 85%"></div></div>
+                                    <span>85%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4 ⭐</span>
+                                    <div class="bar"><div class="fill" style="width: 12%"></div></div>
+                                    <span>12%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3 ⭐</span>
+                                    <div class="bar"><div class="fill" style="width: 2%"></div></div>
+                                    <span>2%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2 ⭐</span>
+                                    <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                                    <span>1%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1 ⭐</span>
+                                    <div class="bar"><div class="fill" style="width: 0%"></div></div>
+                                    <span>0%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reviews-list">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <strong>Dr. Alisher Karimov - Veterinar</strong>
+                                        <span class="review-date">15 Dekabr 2024</span>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>Juda sifatli it vaksinasi. Bemorlarimizda hech qanday nojo'ya ta'sir kuzatilmadi. Immunitet hosil bo'lishi yuqori.</p>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <strong>Prof. Dilnoza Rahimova - Veterinar patolog</strong>
+                                        <span class="review-date">10 Dekabr 2024</span>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>Mahalliy ishlab chiqarish sifati xalqaro veterinar standartlarga javob beradi. Barcha bemorlarimga tavsiya etaman.</p>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <strong>Dr. Bobur Salimov - Veterinar terapevt</strong>
+                                        <span class="review-date">5 Dekabr 2024</span>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>Yaxshi mahsulot, lekin narxi biroz yuqori. Ammo samaradorligi bunga loyiq. Kuchukchalar yaxshi qabul qiladi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2>O'xshash mahsulotlar</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="Gripp vaksina">
+                    </div>
+                    <div class="product-info">
+                        <h3>VetMed Feline Shield</h3>
+                        <p class="product-category">Mushuk vaksinasi</p>
+                        <div class="product-price">
+                            <span class="current-price">$32.99</span>
+                        </div>
+                        <button class="btn btn-primary">Ko'rish</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="Gepatit vaksina">
+                    </div>
+                    <div class="product-info">
+                        <h3>VetMed Antiparazit</h3>
+                        <p class="product-category">Antiparazitar dorilar</p>
+                        <div class="product-price">
+                            <span class="current-price">$18.99</span>
+                        </div>
+                        <button class="btn btn-primary">Ko'rish</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="Pneumonia vaksina">
+                    </div>
+                    <div class="product-info">
+                        <h3>VetMed Multivitamin</h3>
+                        <p class="product-category">Vitaminlar</p>
+                        <div class="product-price">
+                            <span class="current-price">$24.99</span>
+                        </div>
+                        <button class="btn btn-primary">Ko'rish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-paw"></i>
+                        <span>VetMed</span>
+                    </div>
+                    <p>Uy hayvonlari uchun sifatli vaksinalar va dori-darmonlar yetkazib beruvchi ishonchli kompaniya.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Tezkor havolalar</h3>
+                    <ul>
+                        <li><a href="about.html">Biz haqimizda</a></li>
+                        <li><a href="products.html">Mahsulotlar</a></li>
+                        <li><a href="news.html">Yangiliklar</a></li>
+                        <li><a href="gallery.html">Galereya</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Veterinar mahsulotlar</h3>
+                    <ul>
+                        <li><a href="#">It vaksinasi</a></li>
+                        <li><a href="#">Mushuk vaksinasi</a></li>
+                        <li><a href="#">Antiparazitar dorilar</a></li>
+                        <li><a href="#">Vitaminlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Aloqa</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Toshkent, Chilonzor tumani</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+998 90 123 45 67</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@vetmed.uz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VetMed. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Tab switching functionality
+        function openTab(evt, tabName) {
+            var i, tabpanel, tabbtn;
+            tabpanel = document.getElementsByClassName("tab-panel");
+            for (i = 0; i < tabpanel.length; i++) {
+                tabpanel[i].classList.remove("active");
+            }
+            tabbtn = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tabbtn.length; i++) {
+                tabbtn[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Image gallery functionality
+        function changeImage(thumbnail) {
+            var mainImage = document.getElementById('mainProductImage');
+            var thumbnails = document.querySelectorAll('.thumbnail');
+            
+            mainImage.src = thumbnail.src;
+            
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            thumbnail.classList.add('active');
+        }
+
+        // Quantity controls
+        function changeQuantity(change) {
+            var quantityInput = document.getElementById('quantity');
+            var currentValue = parseInt(quantityInput.value);
+            var newValue = currentValue + change;
+            
+            if (newValue >= 1 && newValue <= 10) {
+                quantityInput.value = newValue;
+            }
+        }
+
+
+    </script>
+</body>
+</html>

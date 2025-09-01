@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahsulotlar - VedMedical</title>
+    <title>Mahsulotlar - VetMed</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +16,8 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <i class="fas fa-flask"></i>
-                    <span>VedMedical</span>
+                    <i class="fas fa-paw"></i>
+                    <span>VetMed</span>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
@@ -54,8 +54,8 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Mahsulotlarimiz</h1>
-            <p>Yuqori sifatli vaksinalar va tibbiy preparatlar</p>
+            <h1>Veterinar mahsulotlarimiz</h1>
+            <p>Uy hayvonlari uchun sifatli vaksinalar va dori-darmonlar</p>
         </div>
     </section>
 
@@ -65,9 +65,9 @@
             <div class="category-filters">
                 <button class="filter-btn active" data-filter="all">Barchasi</button>
                 <button class="filter-btn" data-filter="vaccines">Vaksinalar</button>
-                <button class="filter-btn" data-filter="antibiotics">Antibiotiklar</button>
+                <button class="filter-btn" data-filter="medicines">Dorilar</button>
                 <button class="filter-btn" data-filter="vitamins">Vitaminlar</button>
-                <button class="filter-btn" data-filter="analgesics">Og'riq qoldiruvchilar</button>
+                <button class="filter-btn" data-filter="antiparasitic">Antiparazitar</button>
             </div>
         </div>
     </section>
@@ -76,18 +76,35 @@
     <section class="products">
         <div class="container">
             <div class="products-grid">
-                <!-- Vaccines -->
+                <!-- Dog Vaccines -->
                 <div class="product-card" data-category="vaccines">
                     <div class="product-image">
-                        <img src="logo.jpg" alt="COVID-19 vaksina">
+                        <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="It vaksinasi">
                         <div class="product-badge">Yangi</div>
                     </div>
                     <div class="product-info">
-                        <h3>PharmaCorp COVID-19</h3>
-                        <p class="product-category">Vaksinalar</p>
-                        <p class="product-description">COVID-19 ga qarshi yuqori samarali vaksina. Klinik sinovlardan muvaffaqiyatli o'tgan.</p>
+                        <h3>VetMed Canine Combo</h3>
+                        <p class="product-category"><i class="fas fa-syringe"></i> It vaksinasi</p>
+                        <p class="product-description">Itlar uchun 5-valentli kompleks vaksina. Parvovirus, Distemper, Hepatit va boshqa kasalliklarga qarshi.</p>
                         <div class="product-specs">
-                            <span><i class="fas fa-vial"></i> 0.5ml</span>
+                            <span><i class="fas fa-vial"></i> 1ml</span>
+                            <span><i class="fas fa-thermometer-three-quarters"></i> 2-8°C</span>
+                            <span><i class="fas fa-calendar"></i> 36 oy</span>
+                        </div>
+                        <a href="product_detail.html" class="btn btn-primary">Batafsil ma'lumot</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vaccines">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mushuk vaksinasi">
+                    </div>
+                    <div class="product-info">
+                        <h3>VetMed Feline Shield</h3>
+                        <p class="product-category"><i class="fas fa-syringe"></i> Mushuk vaksinasi</p>
+                        <p class="product-description">Mushuklar uchun 3-valentli vaksina. Feline viral rhinotracheitis, calicivirus va panleukopenia ga qarshi.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-vial"></i> 1ml</span>
                             <span><i class="fas fa-thermometer-three-quarters"></i> 2-8°C</span>
                             <span><i class="fas fa-calendar"></i> 24 oy</span>
                         </div>
@@ -97,12 +114,13 @@
 
                 <div class="product-card" data-category="vaccines">
                     <div class="product-image">
-                        <img src="logo.jpg" alt="Gripp vaksina">
+                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=quran-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Quyon vaksinasi">
+                        <div class="product-badge">Mashhur</div>
                     </div>
                     <div class="product-info">
-                        <h3>PharmaCorp Flu Shield</h3>
-                        <p class="product-category">Vaksinalar</p>
-                        <p class="product-description">Mavsumiy gripp kasalligiga qarshi kompleks vaksina. WHO tavsiyalariga muvofiq.</p>
+                        <h3>VetMed Rabbit Guard</h3>
+                        <p class="product-category"><i class="fas fa-syringe"></i> Quyon vaksinasi</p>
+                        <p class="product-description">Quyonlar uchun myxomatosis va viral hemorrhagic kasallik (RHD) ga qarshi vaksina.</p>
                         <div class="product-specs">
                             <span><i class="fas fa-vial"></i> 0.5ml</span>
                             <span><i class="fas fa-thermometer-three-quarters"></i> 2-8°C</span>
@@ -112,53 +130,88 @@
                     </div>
                 </div>
 
-                <div class="product-card" data-category="vaccines">
+                <!-- Medicines -->
+                <div class="product-card" data-category="medicines">
                     <div class="product-image">
-                        <img src="logo.jpg" alt="Gepatit vaksina">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Veterinar antibiotik">
                     </div>
                     <div class="product-info">
-                        <h3>VedMedical Hepatit B</h3>
-                        <p class="product-category">Vaksinalar</p>
-                        <p class="product-description">Gepatit B kasalligiga qarshi samarali vaksina. Chaqaloqlar va kattalar uchun.</p>
+                        <h3>VetMed Amoxivet</h3>
+                        <p class="product-category"><i class="fas fa-pills"></i> Veterinar dorilar</p>
+                        <p class="product-description">Uy hayvonlari uchun keng spektrli antibiotik. Nafas yo'llari va teri infeksiyalari uchun.</p>
                         <div class="product-specs">
-                            <span><i class="fas fa-vial"></i> 1.0ml</span>
-                            <span><i class="fas fa-thermometer-three-quarters"></i> 2-8°C</span>
-                            <span><i class="fas fa-calendar"></i> 36 oy</span>
-                        </div>
-                        <button class="btn btn-primary">Batafsil ma'lumot</button>
-                    </div>
-                </div>
-
-                <!-- Antibiotics -->
-                <div class="product-card" data-category="antibiotics">
-                    <div class="product-image">
-                        <img src="logo.jpg" alt="Amoksitsillin">
-                    </div>
-                    <div class="product-info">
-                        <h3>VedMedical Amoxicillin</h3>
-                        <p class="product-category">Antibiotiklar</p>
-                        <p class="product-description">Keng spektrli antibiotik. Respirator va urogenital infeksiyalar uchun.</p>
-                        <div class="product-specs">
-                            <span><i class="fas fa-pills"></i> 500mg</span>
-                            <span><i class="fas fa-box"></i> 20 kapsul</span>
+                            <span><i class="fas fa-pills"></i> 250mg</span>
+                            <span><i class="fas fa-box"></i> 10 tablet</span>
                             <span><i class="fas fa-calendar"></i> 24 oy</span>
                         </div>
                         <button class="btn btn-primary">Batafsil ma'lumot</button>
                     </div>
                 </div>
 
-                <div class="product-card" data-category="antibiotics">
+                <div class="product-card" data-category="medicines">
                     <div class="product-image">
-                        <img src="logo.jpg" alt="Azitromitsin">
+                        <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Og'riq qoldiruvchi">
                     </div>
                     <div class="product-info">
-                        <h3>VedMedical Azithromycin</h3>
-                        <p class="product-category">Antibiotiklar</p>
-                        <p class="product-description">Makrolid antibiotik. Yuqori nafas yo'llari infeksiyalari uchun samarali.</p>
+                        <h3>VetMed PainRelief</h3>
+                        <p class="product-category"><i class="fas fa-pills"></i> Veterinar dorilar</p>
+                        <p class="product-description">Uy hayvonlari uchun og'riq qoldiruvchi va yallig'lanishga qarshi dori. Xavfsiz formula.</p>
                         <div class="product-specs">
-                            <span><i class="fas fa-pills"></i> 250mg</span>
-                            <span><i class="fas fa-box"></i> 6 tablet</span>
+                            <span><i class="fas fa-pills"></i> 50mg</span>
+                            <span><i class="fas fa-box"></i> 20 tablet</span>
                             <span><i class="fas fa-calendar"></i> 36 oy</span>
+                        </div>
+                        <button class="btn btn-primary">Batafsil ma'lumot</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="medicines">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ko'z tomchisi">
+                    </div>
+                    <div class="product-info">
+                        <h3>VetMed EyeCare</h3>
+                        <p class="product-category"><i class="fas fa-pills"></i> Veterinar dorilar</p>
+                        <p class="product-description">Uy hayvonlari uchun ko'z tomchisi. Ko'z infeksiyalari va yallig'lanishini davolaydi.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-eye-dropper"></i> 10ml</span>
+                            <span><i class="fas fa-thermometer-three-quarters"></i> Xona harorati</span>
+                            <span><i class="fas fa-calendar"></i> 24 oy</span>
+                        </div>
+                        <button class="btn btn-primary">Batafsil ma'lumot</button>
+                    </div>
+                </div>
+
+                <!-- Antiparasitic -->
+                <div class="product-card" data-category="antiparasitic">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Antiparazitar">
+                    </div>
+                    <div class="product-info">
+                        <h3>VetMed FleaStop</h3>
+                        <p class="product-category"><i class="fas fa-bug"></i> Antiparazitar</p>
+                        <p class="product-description">Itlar va mushuklar uchun bit, kanal va boshqa tashqi parazitlarga qarshi vosita.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-tint"></i> 1ml pipet</span>
+                            <span><i class="fas fa-weight"></i> 2-10kg</span>
+                            <span><i class="fas fa-calendar"></i> 36 oy</span>
+                        </div>
+                        <button class="btn btn-primary">Batafsil ma'lumot</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="antiparasitic">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1605881528489-594eb2e2cefa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ichki parazit">
+                    </div>
+                    <div class="product-info">
+                        <h3>VetMed WormAway</h3>
+                        <p class="product-category"><i class="fas fa-bug"></i> Antiparazitar</p>
+                        <p class="product-description">Uy hayvonlari uchun ichki parazitlar (qurt) ga qarshi samarali dori. Barcha yosh guruhlari uchun.</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-pills"></i> 500mg</span>
+                            <span><i class="fas fa-box"></i> 4 tablet</span>
+                            <span><i class="fas fa-calendar"></i> 24 oy</span>
                         </div>
                         <button class="btn btn-primary">Batafsil ma'lumot</button>
                     </div>
@@ -167,69 +220,16 @@
                 <!-- Vitamins -->
                 <div class="product-card" data-category="vitamins">
                     <div class="product-image">
-                        <img src="logo.jpg" alt="Vitamin C">
-                        <div class="product-badge">Mashhur</div>
+                        <img src="https://images.unsplash.com/photo-1556909114-dde8da2fcc6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Multivitamin">
                     </div>
                     <div class="product-info">
-                        <h3>VedMedical Vitamin C</h3>
-                        <p class="product-category">Vitaminlar</p>
-                        <p class="product-description">Yuqori dozali C vitamini. Immunitetni mustahkamlash uchun.</p>
+                        <h3>VetMed Multivitamin</h3>
+                        <p class="product-category"><i class="fas fa-leaf"></i> Vitaminlar</p>
+                        <p class="product-description">Uy hayvonlari uchun kompleks vitamin va mineral qo'shimchasi. Immunitetni mustahkamlaydi.</p>
                         <div class="product-specs">
-                            <span><i class="fas fa-pills"></i> 1000mg</span>
-                            <span><i class="fas fa-box"></i> 30 tablet</span>
+                            <span><i class="fas fa-pills"></i> Quti</span>
+                            <span><i class="fas fa-box"></i> 60 tablet</span>
                             <span><i class="fas fa-calendar"></i> 24 oy</span>
-                        </div>
-                        <button class="btn btn-primary">Batafsil ma'lumot</button>
-                    </div>
-                </div>
-
-                <div class="product-card" data-category="vitamins">
-                    <div class="product-image">
-                        <img src="logo.jpg" alt="Vitamin D">
-                    </div>
-                    <div class="product-info">
-                        <h3>VedMedical Vitamin D3</h3>
-                        <p class="product-category">Vitaminlar</p>
-                        <p class="product-description">Tabiiy D3 vitamini. Suyak va mushaklar salomatligi uchun.</p>
-                        <div class="product-specs">
-                            <span><i class="fas fa-pills"></i> 4000 IU</span>
-                            <span><i class="fas fa-box"></i> 60 kapsul</span>
-                            <span><i class="fas fa-calendar"></i> 36 oy</span>
-                        </div>
-                        <button class="btn btn-primary">Batafsil ma'lumot</button>
-                    </div>
-                </div>
-
-                <!-- Analgesics -->
-                <div class="product-card" data-category="analgesics">
-                    <div class="product-image">
-                        <img src="logo.jpg" alt="Paratsetamol">
-                    </div>
-                    <div class="product-info">
-                        <h3>VedMedical Paracetamol</h3>
-                        <p class="product-category">Og'riq qoldiruvchilar</p>
-                        <p class="product-description">Og'riq va isitma qoldiruvchi dori. Xavfsiz va samarali.</p>
-                        <div class="product-specs">
-                            <span><i class="fas fa-pills"></i> 500mg</span>
-                            <span><i class="fas fa-box"></i> 20 tablet</span>
-                            <span><i class="fas fa-calendar"></i> 24 oy</span>
-                        </div>
-                        <button class="btn btn-primary">Batafsil ma'lumot</button>
-                    </div>
-                </div>
-
-                <div class="product-card" data-category="analgesics">
-                    <div class="product-image">
-                        <img src="logo.jpg" alt="Ibuprofen">
-                    </div>
-                    <div class="product-info">
-                        <h3>VedMedical Ibuprofen</h3>
-                        <p class="product-category">Og'riq qoldiruvchilar</p>
-                        <p class="product-description">Yallig'lanishga qarshi va og'riq qoldiruvchi dori.</p>
-                        <div class="product-specs">
-                            <span><i class="fas fa-pills"></i> 400mg</span>
-                            <span><i class="fas fa-box"></i> 24 tablet</span>
-                            <span><i class="fas fa-calendar"></i> 36 oy</span>
                         </div>
                         <button class="btn btn-primary">Batafsil ma'lumot</button>
                     </div>
@@ -242,37 +242,37 @@
     <section class="product-features">
         <div class="container">
             <div class="section-header">
-                <h2>Mahsulotlarimizning afzalliklari</h2>
-                <p>Nima uchun PharmaCorp mahsulotlarini tanlash kerak</p>
+                <h2>Veterinar mahsulotlarimizning afzalliklari</h2>
+                <p>Nima uchun VetMed mahsulotlarini tanlash kerak</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-certificate"></i>
                     </div>
-                    <h3>Sertifikatlangan</h3>
-                    <p>Barcha mahsulotlar WHO, FDA va O'zbekiston Sog'liqni saqlash vazirligi tomonidan sertifikatlangan.</p>
+                    <h3>Veterinar sertifikat</h3>
+                    <p>Barcha mahsulotlar veterinar standarti, FDA va O'zbekiston veterinar nazorati tomonidan sertifikatlangan.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-microscope"></i>
                     </div>
-                    <h3>Ilmiy asoslangan</h3>
-                    <p>Har bir preparat keng qamrovli klinik sinovlardan o'tgan va samaradorligi isbotlangan.</p>
+                    <h3>Veterinar tadqiqotlar</h3>
+                    <p>Har bir preparat keng qamrovli veterinar sinovlardan o'tgan va uy hayvonlari uchun samaradorligi isbotlangan.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-industry"></i>
+                        <i class="fas fa-paw"></i>
                     </div>
-                    <h3>GMP standartlari</h3>
-                    <p>Ishlab chiqarish jarayoni xalqaro GMP (Good Manufacturing Practice) standartlariga javob beradi.</p>
+                    <h3>Uy hayvonlari uchun xavfsiz</h3>
+                    <p>Veterinar ishlab chiqarish jarayoni uy hayvonlari uchun xavfsizlik standartlariga javob beradi.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-shipping-fast"></i>
                     </div>
-                    <h3>Tez yetkazib berish</h3>
-                    <p>Mahsulotlar butun mamlakat bo'ylab tez va xavfsiz yetkazib beriladi.</p>
+                    <h3>Veterinar klinikalar uchun yetkazib berish</h3>
+                    <p>Veterinar mahsulotlar butun mamlakat bo'ylab veterinar klinikalarga tez va xavfsiz yetkazib beriladi.</p>
                 </div>
             </div>
         </div>
